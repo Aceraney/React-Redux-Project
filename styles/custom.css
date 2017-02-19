@@ -1,0 +1,48 @@
+
+
+* {
+  border-radius: 0 !important;
+  font-family:'Roboto', sans-serif;
+  
+}
+.navbar.* {min-height:100px !important;
+max-height:100px !important;
+}
+
+img.navbar-brand{
+	height:100 !important;}
+
+.navbar{
+margin-bottom:20;
+margin-top:20;
+border:0px;
+
+}
+
+body{
+max-width: 1080px;
+margin: 0 auto !important;
+float: none !important;
+background:#222;
+}
+
+.data-reactroot{
+margin: 10
+}
+
+#app{
+padding:30px;
+}
+
+div.singleplayer{
+outline: 2px solid orange;
+outline-offset: -5px;
+}
+.but-mar{
+	margin-bottom: 25px;
+	margin-top: 25px;
+}
+.playertitle{
+	margin-top: 20px;
+	font-size: 30px;
+}
