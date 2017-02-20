@@ -1,6 +1,6 @@
 import React from 'react';
 import {NavDropdown, Nav, NavItem, MenuItem, Navbar} from 'react-bootstrap';
-import Link from "react-router";
+import {Link} from "react-router";
 
 var whichElement;
 var headStyle ={
@@ -53,7 +53,10 @@ function NavbarInstance (props){
     		<Navbar inverse collapseOnSelect fluid>
     			<Navbar.Header>
       				<Navbar.Brand>
-        				<img src={props.imgURL}/>
+        				
+                <Link to="/battlefield">
+                	<img className = "navimg" src={props.imgURL}/>
+                </Link>
      				</Navbar.Brand>
      			<Navbar.Toggle />
     			</Navbar.Header>

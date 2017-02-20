@@ -9,8 +9,9 @@
 max-height:100px !important;
 }
 
-img.navbar-brand{
-	height:100 !important;}
+
+.navbar-brand img{
+	height:60 !important;}
 
 .navbar{
 margin-bottom:20;
