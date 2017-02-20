@@ -2,7 +2,7 @@ import React from 'react';
 import {Carousel, Caption} from 'react-bootstrap';
 
 
-
+//main page for the DroeseRaney Architecture website clone. A comparison can be seen at www.droeseraney.com
 
 const DRA = React.createClass({
   getInitialState() {

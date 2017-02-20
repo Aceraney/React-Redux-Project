@@ -36,6 +36,7 @@ padding:30px;
 }
 
 div.singleplayer{
+	padding-bottom: 10px;
 outline: 2px solid orange;
 outline-offset: -5px;
 }

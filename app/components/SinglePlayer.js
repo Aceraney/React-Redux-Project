@@ -1,4 +1,5 @@
 import React from 'react';
+import SinglePlayerData from '../components/SinglePlayerData';
 
 var style ={
 	color:'white'
@@ -7,56 +8,39 @@ var style ={
 
 
 
-function SinglePlayer (props) {
-	//remove non significant decimals from the SPM item
-	var spm = props.object.data.extra.spm;
-	
-	spm=spm.toString();
-	spm = spm.substring(0, spm.indexOf('.'));
-	//remove non significant decimals from the KDR item
-	var kdr = props.object.data.extra.kdr;
-	kdr=kdr.toString();
-	kdr = kdr.substring(0, kdr.indexOf('.')+3);
-
-	//remove non significant decimals from the WLR item
-
-	var wlr = props.object.data.extra.wlr;
-	wlr=wlr.toString();
-	wlr = wlr.substring(0, wlr.indexOf('.')+3);
-
-	//remove non significant decimals from the KPM item
-	var kpm = props.object.data.extra.kpm;
-	kpm=kpm.toString();
-	kpm = kpm.substring(0, kpm.indexOf('.')+3);
-
-
-
-	
+const  SinglePlayer = React.createClass({
+	//the functionality of the remove user button. Calls the reducer for removerUser
 	
 
+	handleSubmit(e){
+        e.preventDefault();
+        
+
+        this.props.removeUser(this.props.index)
+    },
+
+
+//The functional components that are rendered for each user in the store. Passes the user itself as props
+//the button is used to remove users from that array which is then updated in the grid. When the object
+//is no longer present in the grid, it is not rendered.
+	
+	
+    render(){
 		return(
-			<div className="col-md-4 text-center singleplayer">
-			<p className="playertitle" style={style}>{props.object.data.uName}
-			</p>
-			<p style={style}>Rank: {props.object.data.rank}
-				</p>
-				<p style={style}>Skill {props.object.data.skill}
-				</p>
-				<p style={style}>Win/Loss: {wlr}
-				</p>
-				<p style={style}>SPM: {spm}
-				</p>
-				<p style={style}>KPM {kpm}
-				</p>
-				<p style={style}>KDR: {kdr}
-				</p>
+			<div  className="col-md-4 text-center singleplayer">
+				<SinglePlayerData userArray={this.props.object.data}/>
+				<div>
+				<button type='button' onClick={this.handleSubmit} className= "btn btn-sm btn-danger">
+				Remove User
+				</button>
+				</div>
 				
 				</div>
 
 
 		)
-
+	}
 	
-}
+});
 
 export default SinglePlayer;

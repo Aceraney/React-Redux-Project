@@ -2,6 +2,8 @@ import React from 'react';
 import {NavDropdown, Nav, NavItem, MenuItem, Navbar} from 'react-bootstrap';
 import {Link} from "react-router";
 
+//this element renders the navbar on both pages. The main homepage and /battlefield. 
+//Uses "whichElement" to decide what the navbar should look like. 
 var whichElement;
 var headStyle ={
   color:'white',
@@ -39,7 +41,8 @@ function RightSide(){
   }
 };
 
-
+//img url is passed as a prop from main depending what the route is. This prop is then
+//used to determine which version of the right side of the navbar should be rendered.
 
 function NavbarInstance (props){
 

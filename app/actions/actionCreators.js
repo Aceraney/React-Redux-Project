@@ -17,7 +17,7 @@ export function removeUser(index){
 		index
 	}
 }
-
+//not yet coded. TODO
 export function changeBackground(colorindex){
 
 	return{

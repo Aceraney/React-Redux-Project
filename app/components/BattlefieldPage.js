@@ -5,19 +5,20 @@ import {getBFStats} from '../utils/battlefieldHelper';
 import BattlefieldGrid from '../components/BattlefieldGrid'
 import SinglePlayer from './SinglePlayer'
 
-
+//main page for the /battlefield route. Calls the navbar instance and calls the battlefield Grid
+//which maps the userArray which contains the user data to a SinglePlayer instance.
 
 
 
 
 const BattlefieldPage = React.createClass({
-
+//set the initial state to ''
     getInitialState: function () {
     return {
       username: ''
     }
   },
-
+    //updates the username field after each character typed
         handleUpdateUser: function(e){
         this.setState({
             username: e.target.value
@@ -25,7 +26,9 @@ const BattlefieldPage = React.createClass({
         })
 
     },
-
+    //called when form is submitted. Saves the state of username to the variable username. Resets the form value
+    //to '' as well as the state. Calls the reducer searchUser which calls the API and populates the userArray
+    //in store. These components are then rendered by the Battlefield Grid.
      handleSubmitUser:function(e){
         e.preventDefault()
         var username = this.state.username;
@@ -44,12 +47,12 @@ const BattlefieldPage = React.createClass({
 
     
 
-	render() {
+    render() {
         return (
-        	<div>
-        		<NavbarInstance imgURL={'../assets/battlefield.png'}/>
+            <div>
+                <NavbarInstance imgURL={'../assets/battlefield.png'}/>
 
-		        <form className="form-group" onSubmit ={this.handleSubmitUser}>
+                <form className="form-group" onSubmit ={this.handleSubmitUser}>
                     <div >
                         <input ref ="form" className="form-control text-center"
                                placeholder="Battlefield 4 Username"
@@ -66,15 +69,15 @@ const BattlefieldPage = React.createClass({
                         </button>
                     </div>
                 </form>
-                <BattlefieldGrid userArray = {this.props.users} />
-        		
-        		
+                <BattlefieldGrid userArray = {this.props.users} removeUser={this.props.removeUser}/>
                 
                 
-        	
-        	</div>
-            		
-        	)
+                
+                
+            
+            </div>
+                    
+            )
     }
 });
 
