@@ -9,6 +9,9 @@
 max-height:100px !important;
 }
 
+.navbar-inverse{
+background-color:#151515;
+}
 
 .navbar-brand img{
 	height:60 !important;}
@@ -24,7 +27,7 @@ body{
 max-width: 1080px;
 margin: 0 auto !important;
 float: none !important;
-background:#222;
+background:#151515;
 }
 
 .data-reactroot{
@@ -49,3 +52,27 @@ outline-offset: -5px;
 	margin-top: 20px;
 	font-size: 30px;
 }
+
+.carousel-indicators {
+  bottom:-50px;
+  left:19%;
+}
+
+.carousel-indicators li{
+  height:1px;
+  width:50px;
+  border: 1px solid rgba(144, 144, 144, 0.42);
+}
+
+.carousel-indicators .active {
+    height:1px;
+  width:50px;
+  margin:1;
+   
+   border: 1px solid white;
+}
+.glyphicon-chevron-right{
+width: 5px;
+  height: 4px;
+  }
+
