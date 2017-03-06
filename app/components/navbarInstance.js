@@ -46,18 +46,18 @@ function RightSide(){
 
 function NavbarInstance (props){
 
-  if(props.imgURL==='../assets/dra.png'){
+  if(props.imgURL==='../app/assets/dra.png'){
     whichElement="DRA";
   }
   else{
     whichElement="bf";
   }
     	return (
-    		<Navbar inverse collapseOnSelect fluid>
-    			<Navbar.Header>
-      				<Navbar.Brand>
+    		<Navbar inverse collapseOnSelect fluid className="dra">
+    			<Navbar.Header className ='dra'>
+      				<Navbar.Brand className ='dra'>
         				
-                <Link to="/battlefield">
+                <Link to="/">
                 	<img className = "navimg" src={props.imgURL}/>
                 </Link>
      				</Navbar.Brand>

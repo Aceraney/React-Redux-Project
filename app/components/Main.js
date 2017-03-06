@@ -1,12 +1,13 @@
 import React from 'react';
 import NavbarInstance from '../components/navbarInstance';
+import globalStyles	 from '../assets/styles/global.css';
 
 
 const Main = React.createClass({
     render() {
         return (
             <div>
-            	<NavbarInstance imgURL={'../assets/dra.png'}/>
+            	
             		{this.props.children}
                 
             </div>

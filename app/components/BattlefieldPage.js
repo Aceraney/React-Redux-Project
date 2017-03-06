@@ -12,6 +12,14 @@ import SinglePlayer from './SinglePlayer'
 
 
 const BattlefieldPage = React.createClass({
+
+      componentWillMount: function(){
+    document.body.style.backgroundColor = "#151515";
+    document.title="Battlefield"
+},
+componentWillUnmount: function(){
+    document.body.style.backgroundColor = null;
+},
 //set the initial state to ''
     getInitialState: function () {
     return {
@@ -50,7 +58,7 @@ const BattlefieldPage = React.createClass({
     render() {
         return (
             <div>
-                <NavbarInstance imgURL={'../assets/battlefield.png'}/>
+                <NavbarInstance imgURL={'../app/assets/battlefield.png'}/>
 
                 <form className="form-group" onSubmit ={this.handleSubmitUser}>
                     <div >

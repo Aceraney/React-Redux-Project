@@ -1,0 +1,186 @@
+
+
+* {
+  border-radius: 0 !important;
+  font-family:'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.menu-item:visited{
+color:black;
+}
+
+.menu-item:hover{
+text-decoration:bold;
+}
+
+body{
+  background-size:cover;
+  background-position:center;
+}
+
+
+.dra.navbar-inverse{
+background-color:#151515;
+border:none;
+}
+
+.dra.navbar-collapse{
+border:none;
+}
+.dra.navbar-brand img{
+	height:60 !important;}
+	
+	#app > div > nav > div > div.navbar-collapse.collapse.in{
+	margin-top:15px;
+	}
+	
+	
+	
+.dra.navbar-brand{
+margin-top:-20px;
+}
+
+.about-item {
+color:black;
+font-family: 'Roboto', sans-serif;
+font-size: 20px;
+margin:50px;
+}
+
+a {
+    color: #ff0000;
+    text-decoration: none;
+    
+}
+a:visited{
+color: #ffffff;
+text-decoration:none;
+}
+
+a:link{
+text-decoration:none;
+}
+
+.about-header{
+  font-family: 'Roboto', sans-serif;
+  font-weight:700;
+  text-align:center;
+margin-top:20px;
+color:black;
+font-size:50px;
+
+   
+}
+
+.acebrand.navbar-brand{
+
+color:#ffffff;
+}
+
+#basic-nav-dropdown{
+color:#ffffff;
+}
+
+a:hover 
+{
+     color: #ffffff;
+     text-decoration:none; 
+     cursor:pointer;  
+}
+
+.dra.navbar{
+margin-bottom:20;
+margin-top:20;
+border:0px;
+
+}
+
+body{
+
+margin: 0 auto !important;
+float: none !important;
+
+}
+
+.dra.data-reactroot{
+margin: 10
+}
+
+
+div.singleplayer{
+	padding-bottom: 10px;
+outline: 2px solid orange;
+outline-offset: -5px;
+}
+.but-mar{
+	margin-bottom: 25px;
+	margin-top: 25px;
+}
+.playertitle{
+	margin-top: 20px;
+	font-size: 30px;
+}
+
+.carousel-indicators {
+  bottom:-50px;
+  left: 0%;
+  width: inherit;
+  margin-left:0%;
+}
+
+.carousel-indicators li{
+  height:1px;
+  width:40px;
+  border: 1px solid rgba(144, 144, 144, 0.42);
+}
+
+.carousel-indicators .active {
+    height:1px;
+  width:40px;
+  margin:1;
+   
+   border: 1px solid white;
+}
+.glyphicon-chevron-right{
+width: 5px;
+  height: 4px;
+  }
+  
+  .acenav{
+    background-color: transparent; 
+    border:none;
+
+    background-image: url('../acenav.png');
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+  }
+
+.about-header-div{
+  background-color:white;
+}
+  
+  #basic-nav-dropdown{
+  background-color:transparent;
+  }
+  
+.splash-header{
+text-align: center;
+font-size:50px;
+font-weight:900;
+position: relative;
+top: 50%;
+transform: translateY(-50%); 
+
+}
+
+.splash-div{
+	height:70%;
+}
+
+
+
+
